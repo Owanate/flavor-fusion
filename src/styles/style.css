@@ -58,6 +58,34 @@ svg {
     fill: #F1F8FF;
     width: 2rem;
 }
+.register-body {
+    background: url('../../public/register-bg.jpg');
+    background-size: cover;
+    background-postion: center/center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+}
+.wrapper{
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    width: 80%;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.form-control, .form-select {
+    background: rgba( 255, 255, 255, 0.5 );
+}
+.form-control:focus {
+    background: rgba( 255, 255, 255, 0.3 );
+    color: #fff;
+}
+.form-select option {
+    width: 50%;
+}
 @media (min-width: 600px) {
     .img-height {
         height: 99%;
