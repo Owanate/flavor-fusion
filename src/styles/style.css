@@ -1,0 +1,75 @@
+.sec-font-color {
+    color: #f96d00;
+}
+.nav-link.active, .nav-link:hover {
+    color: #f96d00 !important;
+}
+.btn {
+    background-color: #f96d00;
+    color: #f1f8ff;
+}
+.btn:hover, .btn:focus{
+    opacity: 0.9;
+    color: #f96d00;
+}
+.nav-link {
+    font-size: 20px;
+}
+.hero-parallax-img {
+    top: 0%;
+    right: 0;
+    width: 130%;
+}
+.img-1 {
+    border-top-left-radius: 10px;
+}
+.img-2 {
+    border-top-right-radius: 10px;
+}
+.img-3 {
+    border-bottom-left-radius: 10px;
+}
+.img-4 {
+    border-bottom-right-radius: 10px;
+}
+.about {
+    background: url('../../public/about-bg.jpg');
+    background-size: cover;
+    background-postion: center/center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+}
+.orange-box {
+    background-color: #f96d00;
+}
+.specialty {
+    background: url('../../public/specialty-bg.jpg');
+    background-size: cover;
+    background-postion: center/center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+}
+footer {background-color: #141010;}
+svg {
+    fill: #F1F8FF;
+    width: 2rem;
+}
+@media (min-width: 600px) {
+    .img-height {
+        height: 99%;
+    }
+}
+@media (min-width: 800px) {
+    .about-height {
+        height: 290px;
+    }
+    .hero-parallax-img {
+        top: -10rem;
+        right: -10rem;
+        width: 80vw;
+    }
+}
