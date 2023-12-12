@@ -21,20 +21,18 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body class="bg-black d-flex">
-    <!-- Sidebar Start -->
+    <!-- Sidebar -->
     <nav class="offcanvas-lg offcanvas-start text-bg-dark mt-5 pt-3 vh-100 position-fixed top-0 start-0 overflow-y-auto" tabindex="-1" id="sidebar" data-bs-backdrop="false" aria-labelledby="sideNavigationLabel">
         <div class="offcanvas-body navbar navbar-dark flex-column align-items-start mt-3 px-md-4 ms-lg-3">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link active d-flex align-items-center mb-3 mb-md-4" aria-current="page" href="./dashboard.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#f1f8ff" class="bi bi-grid me-2" viewBox="0 0 16 16">
-                        <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
-                        </svg>
-                        <span class="text-white fw-semibold fs-4">Overview</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="me-2"><path d="M19 21.0001H5C4.44772 21.0001 4 20.5524 4 20.0001V11.0001L1 11.0001L11.3273 1.61162C11.7087 1.26488 12.2913 1.26488 12.6727 1.61162L23 11.0001L20 11.0001V20.0001C20 20.5524 19.5523 21.0001 19 21.0001ZM13 19.0001H18V9.15757L12 3.70302L6 9.15757V19.0001H11V13.0001H13V19.0001Z"></path></svg>
+                        <span class="text-white fw-semibold fs-4">Home</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center mb-3 mb-md-4" href="#">
+                    <a class="nav-link d-flex align-items-center mb-3 mb-md-4" href="./explore.html">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#f1f8ff" class="bi bi-file-text me-2" viewBox="0 0 16 16">
                             <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z"/>
                             <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1"/>
@@ -43,17 +41,17 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center mb-3 mb-md-4" href="#">
+                    <a href="./cuisines.html" class="nav-link d-flex align-items-center mb-3 mb-md-4">
+                        <span class="material-symbols-outlined text-white me-2">restaurant_menu</span>
+                        <span class="text-white fw-semibold fs-4">Cuisines</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center mb-3 mb-md-4" href="./search.html">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#f1f8ff" class="bi bi-search me-2" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                         </svg>
                         <span class="text-white fw-semibold fs-4">Search</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center mb-3 mb-md-4">
-                        <span class="material-symbols-outlined text-white me-2">restaurant_menu</span>
-                        <span class="text-white fw-semibold fs-4">Cuisines</span>
                     </a>
                 </li>
             </ul>
@@ -77,7 +75,7 @@
                         <span class="d-none d-lg-inline-flex text-white fs-5 fw-semibold">Ehlena George</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end bg-dark  rounded-bottom m-0">
-                        <a href="#" class="dropdown-item text-white">Log Out</a>
+                        <a href="../../index.html" class="dropdown-item text-white">Log Out</a>
                     </div>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-label="Sidebar navigation">
@@ -87,58 +85,68 @@
         </header>
         
         <!-- Main content -->
-        <section class="row gx-5 mt-5 pt-5 text-white">
-            <div class="col-lg-8">
-                <div class="orange-box row align-items-center rounded px-3 py-4 py-md-2">
-                    <div class="text-center text-sm-start col-sm-6 col-md-8 col-lg-7 p-0">
-                        <h1 class="dispaly-6 fw-semibold mb-3 ms-md-4 ms-lg-3">
-                            Good food makes
-                            <p>You happy</p>
-                        </h1>
-                        <p class="fs-5 ms-md-4 ms-lg-3">Let's take your happiness to the next level with a great tasty meal</p>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-5 dashboard-image overflow-hidden">
-                        <img src="../../public/overview.png" alt="" class="img-fluid">
-                    </div>
+        <section class="pt-5 mt-5 text-white">
+            <div class="banner p-3 rounded">
+                <div class="col-sm-6 col-lg-5 text-center text-sm-start">
+                    <h1 class="display-5 lh-1 fw-semibold mb-3 ms-sm-4 ms-lg-3">It's not just the food but <span class="sec-font-color">the experience</span></h1>
+                    <p class="fs-5 ms-sm-4 ms-lg-3 lh-1">Good food makes you happy. Let's take your happiness to the next level with a great tasty meal and dishes tailored to your taste buds and dietary preferences.</p>
                 </div>
-                <div class="bg-dark rounded mt-4 p-3">
-                    <h2 class="mb-4 text-center text-sm-start h3">Based on the type of food you like</h2>
-                    <div class="row row-cols-1 row-cols-sm-2 g-4">
-                        <div class="col">
-                            <a href="" class="card bg-black text-white text-center text-decoration-none">
-                                <img src="../../public/overview-placeholder.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tuna With Pasta</h5>
-                                    <h6 class="card-subtitle text-secondary">422.67cal</h6>
-                                </div>
-                            </a>
+            </div>
+            <div class="orange-box rounded p-3 mt-3">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-sm-3 orange-banner">
+                        <img src="../../public/explore.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-sm-8 row align-items-center ms-sm-3 wrapper rounded p-3">
+                        <div class="col-sm-4 text-center border-end">
+                            <h5 class="h4">Effortless Nutrition</h5>
+                            <p class="lh-1">Simplify your day with well-balanced, nutritious meals.</p>
                         </div>
-                        <div class="col">
-                            <a href="" class="card bg-black text-white text-center text-decoration-none">
-                                <img src="../../public/overview-placeholder.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tuna With Pasta</h5>
-                                    <h6 class="card-subtitle text-secondary">422.67cal</h6>
-                                </div>
-                            </a>
+                        <div class="col-sm-4 text-center border-end">
+                            <h5 class="h4">Time-Saving Convenience</h5>
+                            <p class="lh-1">Maximize efficiency, enjoy delicious meals without hassle.</p>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <h5 class="h4">Healthier Choices</h5>
+                            <p class="lh-1">Make better decisions effortlessly, promoting daily well-being.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 mt-5 mt-lg-0 p-0">
-               <div class="bg-dark rounded p-3 mx-4 mx-lg-0">
-                    <h2 class="mb-0 text-center text-sm-start h3">Sip and Savour:</h2>
-                    <p class="text-center text-sm-start">Explore your diverse drink menu.</p>
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-1 g-4">
-                        <div class="col">
-                            <div class="card bg-black text-white shadow-lg" style="max-width: 540px;">
-                                <div class="row g-0">
-                                    <div class="col-md-4">
-                                    <img src="../../public/overview-placeholder.png" class="img-fluid rounded-start h-100" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center">Honey Ginger Lemon Iced Tea</h5>
+            <div class="bg-dark rounded mt-4 py-3">
+                <h2 class="mb-4 ms-sm-3 text-center text-sm-start">Based on the type of food you like</h2>
+                <div class="row mx-3 align-items-center">
+                    <div class="col-lg-7 bg-black rounded p-3 text-center">
+                        <h3 class="h3">Tuna with Salad</h3>
+                        <p class="mb-0 d-flex flex-column flex-sm-row align-items-center justify-content-center">
+                            <span class="material-symbols-outlined me-1 d-none d-sm-block">schedule</span>
+                            <span>45 minutes</span> 
+                            <span class="mx-2 d-none d-sm-block">|</span>
+                            <span class="fw-semibold">Serving: <span>2 people</span>
+                        </span></p>
+                        <div class="row mt-3 align-items-center">
+                            <div class="col-sm-7">
+                                <p class="mb-0 lh-sm text-sm-start">Blueberry, Chocolate &amp; Cocao Superfood Pancakes - Gluten-Free/Paleo/Vegan takes about 30 minutes from beginning to end. This recipe serves 2 and costs $2.94 per serving. One portion of this dish contains around 13g of protein, 43g of fat, and a total of 775 calories.</p>
+                                <div class="d-grid col-12 col-sm-6 mt-3">
+                                    <button class="btn fw-semibold">Recipe</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 px-0 px-md-2 mt-3 mt-sm-0">
+                                <img src="../../public/overview-placeholder.png" alt="" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mt-3 mt-lg-0 p-0 ps-lg-3">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-1 g-4">
+                            <div class="col">
+                                <div class="card bg-black text-white" style="max-width: 540px;">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-md-4 ps-md-3">
+                                            <img src="../../public/overview-placeholder.png" class="img-fluid rounded h-100" alt="...">
+                                        </div>
+                                        <div class="col-md-8 card-body">
+                                            <h5 class="card-title text-center mb-0">Honey Ginger Lemon Iced Tea</h5>
+                                            <p class="card-text text-secondary text-center mb-1">Ready in 5 minutes</p>
                                             <div class="d-grid">
                                                 <button class="btn btn-sm fw-semibold">Instructions</button>
                                             </div>
@@ -146,50 +154,15 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card bg-black text-white" style="max-width: 540px;">
-                                <div class="row g-0">
-                                    <div class="col-md-4">
-                                    <img src="../../public/overview-placeholder.png" class="img-fluid rounded-start h-100" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center">Honey Ginger Lemon Iced Tea</h5>
-                                            <div class="d-grid">
-                                                <button class="btn btn-sm fw-semibold">Instructions</button>
-                                            </div>
+                            <div class="col">
+                                <div class="card bg-black text-white" style="max-width: 540px;">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-md-4 ps-md-3">
+                                            <img src="../../public/overview-placeholder.png" class="img-fluid rounded h-100" alt="...">
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col d-none d-md-block">
-                            <div class="card bg-black text-white" style="max-width: 540px;">
-                                <div class="row g-0">
-                                    <div class="col-md-4">
-                                    <img src="../../public/overview-placeholder.png" class="img-fluid rounded-start h-100" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center">Honey Ginger Lemon Iced Tea</h5>
-                                            <div class="d-grid">
-                                                <button class="btn btn-sm fw-semibold">Instructions</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col d-none d-md-block">
-                            <div class="card bg-black text-white" style="max-width: 540px;">
-                                <div class="row g-0">
-                                    <div class="col-md-4">
-                                    <img src="../../public/overview-placeholder.png" class="img-fluid rounded-start h-100" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center">Honey Ginger Lemon Iced Tea</h5>
+                                        <div class="col-md-8 card-body">
+                                            <h5 class="card-title text-center mb-0">Honey Ginger Lemon Iced Tea</h5>
+                                            <p class="card-text text-secondary text-center mb-1">Ready in 5 minutes</p>
                                             <div class="d-grid">
                                                 <button class="btn btn-sm fw-semibold">Instructions</button>
                                             </div>
@@ -199,12 +172,12 @@
                             </div>
                         </div>
                     </div>
-               </div>
+                </div>
             </div>
         </section>
         
         <!-- Footer -->
-        <footer class="py-2 bg-dark mt-3 mt-lg-3">
+        <footer class="py-2 bg-dark mt-3">
             <p class="text-center text-secondary mb-0 fs-6">&copy; <span id-date>2023</span> FlavorFusion, Inc</p>
         </footer>
     </main>

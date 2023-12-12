@@ -4,9 +4,13 @@
 .nav-link.active, .nav-link:hover {
     color: #f96d00 !important;
 }
-.btn {
+.nav-fill .nav-item .btn {
+    width: 90%;
+}
+.btn, .btn.active {
     background-color: #f96d00;
     color: #f1f8ff;
+    border: 0;
 }
 .btn:hover, .btn:focus{
     background-color: #fff;
@@ -71,9 +75,9 @@ svg {
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 9px );
     -webkit-backdrop-filter: blur( 9px );
-    width: 80%;
+    /* width: 80%;
     max-width: 50rem;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
 .form-control, .form-select {
     background: rgba( 255, 255, 255, 0.5 );
@@ -96,12 +100,28 @@ svg {
 .dashboard-image img {
     animation: imageRotate 50s linear infinite;
 }
+.orange-banner img {
+    width: 90%;
+}
 .card-img-overlay {
    background: rgba( 0, 0, 0, 0.5 ) !important; 
    height: 200px;
 }
 .card-img-top, .card-img {
     height: 200px;
+}
+.banner {
+    background: url('../../public/search-bg.jpg') center center/cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+}
+.explore-banner {
+    background: url('../../public/overview-bg.jpg') center center/cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: darken;
+}
+.cuisine-banner {
+    min-height: 30vh;
 }
 @keyframes imageRotate {
     100% {
