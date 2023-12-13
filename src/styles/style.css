@@ -41,18 +41,13 @@
     background-size: cover;
     background-postion: center/center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.7);
-    background-blend-mode: darken;
+    min-height: 100vh;
 }
 .wrapper{
-    background: rgba( 255, 255, 255, 0.3 );
+    background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 9px );
     -webkit-backdrop-filter: blur( 9px );
-    /* width: 80%;
-    max-width: 50rem;
-    margin: 0 auto; */
 }
 .form-control, .form-select {
     background: rgba( 255, 255, 255, 0.5 );
