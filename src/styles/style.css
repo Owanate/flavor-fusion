@@ -103,4 +103,8 @@
         width: calc(100% - 230px);
         margin-left: 230px;
     }
+    .ingredient {
+        width: 50%;
+        font-size: 1.1rem !important;
+    }
 }
