@@ -69,9 +69,13 @@
 .dashboard-image img {
     width: 90%;
 }
-/* .card-img-top, .card-img {
-    height: 200px;
-} */
+.speciality-banner {
+    background: url('../../public/register-bg.jpg') center center/cover no-repeat;
+}
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 15em;
+}
 .banner {
     background: url('../../public/main-bg.jpg') center center/cover no-repeat;
     background-color: rgba(0, 0, 0, 0.4);
@@ -85,6 +89,30 @@
 .cuisine-banner {
     min-height: 30vh;
 }
+.row>li {
+    list-style: none;
+}
+.cuisine-card a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.cuisine-card:hover {
+    border: 2px solid #f96d00;
+}
+.cuisine-card a:focus {
+    text-decoration: underline;
+}
+.cuisine-card:focus-within {
+    border: 2px solid #f96d00;
+}
+.cuisine-card:focus-within a:focus {
+    text-decoration: none;
+}
+
 @keyframes imageRotate {
     100% {
         transform: rotate(360deg);
@@ -105,6 +133,5 @@
     }
     .ingredient {
         width: 50%;
-        font-size: 1.1rem !important;
     }
 }

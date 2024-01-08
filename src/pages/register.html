@@ -28,22 +28,22 @@
                     <h3 class="fw-semibold h4 mb-0">Create your account</h3>
                     <span class="lh-1 fw-light">Enter your details below to get started.</span>
                 </header>
-                <form action="" class="mt-2">
+                <form action="" class="mt-2" novalidate>
                     <div class="mb-3">
                         <label for="name" class="form-label">Name:</label>
-                        <input type="text" class="form-control form-control-sm" id="name" placeholder="eg. Jonah">
+                        <input type="text" class="form-control form-control-sm" id="name" name="name" placeholder="eg. Jonah" required autocomplete="name">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email:</label>
-                        <input type="email" class="form-control form-control-sm" id="email" placeholder="example@example.com">
+                        <input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="example@example.com" required autocomplete="email">
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Password:</label>
-                        <input type="password" class="form-control form-control-sm" id="password" placeholder="Enter your password...">
+                        <input type="password" class="form-control form-control-sm" id="password" name="password" placeholder="Enter your password..." required autocomplete="new-password">
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Diet:</label>
-                        <select class="form-select form-select-sm" aria-label="Diet preferences">
+                        <label for="diet-preference" class="form-label">Diet:</label>
+                        <select class="form-select form-select-sm" aria-label="Diet preferences" id="diet-preference">
                             <option selected>Choose preferred diet </option>
                         </select>
                     </div>
@@ -61,14 +61,14 @@
                     <h3 class="fw-semibold h4 mb-0">Welcome Back</h3>
                     <span class="lh-1 fw-light">Login to your account below</span>
                 </header>
-                <form action="" class="mt-2">
+                <form action="" class="mt-2" novalidate>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email:</label>
-                        <input type="email" class="form-control form-control-sm" id="email" placeholder="example@example.com">
+                        <input type="email" class="form-control form-control-sm" id="email" name="email"  placeholder="example@example.com" required autocomplete="email">
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Password:</label>
-                        <input type="password" class="form-control form-control-sm" id="password" placeholder="Enter your password...">
+                        <input type="password" class="form-control form-control-sm" id="password" name="password" placeholder="Enter your password..." required autocomplete="current-password">
                     </div>
                     <div class="d-grid col-12 col-md-4 mx-auto">
                         <a href="" class="btn fw-semibold">Login</a>
