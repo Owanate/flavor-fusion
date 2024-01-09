@@ -71,8 +71,8 @@
                 </div>
                 <div class="nav-item dropdown me-md-3">
                     <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img class="rounded-circle me-lg-2" src="https://themewagon.github.io/Breeze-Free-Bootstrap-Admin-Template/assets/images/faces/face1.jpg" alt="" style="width: 40px; height: 40px;">
-                        <span class="d-none d-lg-inline-flex text-white fs-5 fw-semibold">Ehlena George</span>
+                        <img class="rounded-circle me-sm-2" src="https://themewagon.github.io/Breeze-Free-Bootstrap-Admin-Template/assets/images/faces/face1.jpg" alt="" style="width: 40px; height: 40px;">
+                        <span class="d-none d-sm-inline-flex text-white fs-5 fw-semibold" id="username"></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end bg-dark  rounded-bottom m-0">
                         <a href="../../index.html" class="dropdown-item text-white">Log Out</a>
@@ -115,40 +115,54 @@
             </div>
             <div class="bg-dark rounded mt-4 py-3">
                 <h2 class="mb-4 ms-sm-3 text-center text-sm-start">Based on the type of food you like</h2>
-                <div class="row mx-3 align-items-center">
+                <div class="row mx-3">
                     <div class="col-lg-7 bg-black rounded p-3 text-center">
-                        <h3 class="h3">Tuna with Salad</h3>
-                        <p class="mb-0 d-flex flex-column flex-sm-row align-items-center justify-content-center">
-                            <span class="material-symbols-outlined me-1 d-none d-sm-block">schedule</span>
-                            <span>45 minutes</span> 
-                            <span class="mx-2 d-none d-sm-block">|</span>
-                            <span class="fw-semibold">Serving: <span>2 people</span>
-                        </span></p>
-                        <div class="row mt-3 align-items-center">
+                        <h3 class="h3" id="title"></h3>
+                        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center">
+                            <p class="mb-0 d-flex align-items-center me-sm-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill me-2" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                                </svg>
+                                <span id="serve-time"></span>
+                            </p>
+                            <p class="mb-0 d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill me-2" viewBox="0 0 16 16">
+                                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                                </svg>
+                                <span id="serve-people"></span>
+                            </p>
+                        </div>
+                        <div class="row mt-3">
                             <div class="col-sm-7">
-                                <p class="mb-0 lh-sm text-sm-start">Blueberry, Chocolate &amp; Cocao Superfood Pancakes - Gluten-Free/Paleo/Vegan takes about 30 minutes from beginning to end. This recipe serves 2 and costs $2.94 per serving. One portion of this dish contains around 13g of protein, 43g of fat, and a total of 775 calories.</p>
+                                <p class="mb-0 lh-sm text-sm-start" id="description"></p>
                                 <div class="d-grid col-12 col-sm-6 mt-3">
-                                    <a href="./instructions.html" target="_blank" class="btn fw-semibold text-decoration-none">Recipe</a>
+                                    <a target="_blank" class="btn fw-semibold  d-flex align-items-center justify-content-center" id="recipe-link">
+                                        Recipe
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-sm-5 px-0 px-md-2 mt-3 mt-sm-0">
-                                <img src="../../public/overview-placeholder.png" alt="" class="img-fluid rounded">
+                                <img alt="" class="img-fluid rounded h-100 object-fit-cover" id="food-image">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5 mt-3 mt-lg-0 p-0 ps-lg-3">
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-1 g-4">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-1 g-4" id="modal-wrapper">
                             <div class="col">
                                 <div class="card bg-black text-white" style="max-width: 540px;">
                                     <div class="row g-0 align-items-center">
                                         <div class="col-md-4 ps-md-3">
-                                            <img src="../../public/overview-placeholder.png" class="img-fluid rounded h-100" alt="...">
+                                            <img id="drink-image" class="img-fluid rounded" alt="">
                                         </div>
                                         <div class="col-md-8 card-body">
-                                            <h5 class="card-title text-center mb-0">Honey Ginger Lemon Iced Tea</h5>
-                                            <p class="card-text text-secondary text-center mb-1">Ready in 5 minutes</p>
+                                            <h5 class="card-title text-center mb-0" id="drink-title"></h5>
+                                            <p class="card-text text-secondary text-center mb-1" id="drink-serve"></p>
                                             <div class="d-grid">
-                                                <button type="button" class="btn btn-sm fw-semibold" data-bs-toggle="modal" data-bs-target="#instructions">Instructions</button>
+                                                <button type="button" id="modal-button" class="btn btn-sm fw-semibold" data-bs-toggle="modal" data-bs-target="#drink-recipe">Instructions</button>
                                             </div>
                                         </div>
                                     </div>
@@ -158,16 +172,64 @@
                                 <div class="card bg-black text-white" style="max-width: 540px;">
                                     <div class="row g-0 align-items-center">
                                         <div class="col-md-4 ps-md-3">
-                                            <img src="../../public/overview-placeholder.png" class="img-fluid rounded h-100" alt="...">
+                                            <img id="snack-image" class="img-fluid rounded" alt="">
                                         </div>
                                         <div class="col-md-8 card-body">
-                                            <h5 class="card-title text-center mb-0">Honey Ginger Lemon Iced Tea</h5>
-                                            <p class="card-text text-secondary text-center mb-1">Ready in 5 minutes</p>
+                                            <h5 class="card-title text-center mb-0" id="snack-title"></h5>
+                                            <p class="card-text text-secondary text-center mb-1" id="snack-serve"></p>
                                             <div class="d-grid">
-                                                <button type="button" class="btn btn-sm fw-semibold" data-bs-toggle="modal" data-bs-target="#instructions">Instructions</button>
+                                                <button type="button" id="modal-button" class="btn btn-sm fw-semibold" data-bs-toggle="modal" data-bs-target="#snack-recipe">Instructions</button>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 speciality-banner rounded p-4">
+                <div class="col-sm-6 text-center text-sm-start">
+                    <span class="sec-font-color fs-5 text-uppercase fw-semibold">Joke</span>
+                    <h5 class="h3 mb-1">A Side of Laughs</h5>
+                    <p id="joke" class="lh-sm mb-0"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <!-- Drink Modal -->
+        <section class="modal fade text-white" id="drink-recipe" tabindex="-1" aria-labelledby="instructionsLabel" aria-hidden="true" data-bs-theme="dark">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title h2" id="instructionsLabel">
+                            Drink <span class="sec-font-color">Recipe</span>
+                        </p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-5 p-sm-0">
+                                    <img alt="" class="img-fluid rounded h-100 object-fit-cover" id="drink-modal-image">
+                                </div>
+                                <div class="col-sm-8 col-md-7">
+                                    <p class="mb-0 fs-5"><i>Sip and Savour</i></p>
+                                    <h3 class="h2" id="drink-modal-title"></h3>
+                                    <div class="d-none d-lg-flex flex-wrap align-items-center justify-content-between justify-content-sm-start flex-wrap" id="dish-types-drink"></div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="bg-black py-2 px-3 rounded">
+                                    <h3 class="h4">Ingredients</h3>
+                                    <ul class="d-flex flex-wrap" id="drink-ingredients"></ul>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="bg-black py-2 px-3 rounded">
+                                    <h3 class="h4">Instructions</h3>
+                                    <ol id="drink-instructions"></ol>
                                 </div>
                             </div>
                         </div>
@@ -175,70 +237,52 @@
                 </div>
             </div>
         </section>
-
-        <aside class="modal fade text-white" id="instructions" tabindex="-1" aria-labelledby="instructionsLabel" aria-hidden="true" data-bs-theme="dark">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-title h2" id="instructionsLabel">
-                        Drinks <span class="sec-font-color">Recipe</span>
-                    </p>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-4 col-md-5 p-sm-0">
-                                <img src="https://spoonacular.com/recipeImages/643559-556x370.jpg" alt="" class="img-fluid rounded h-100 object-fit-cover">
-                            </div>
-                            <div class="col-sm-8 col-md-7">
-                                <p class="mb-0 fs-5"><i>Sip and Savour</i></p>
-                                <h3 class="h2">Fresh Peach Margarita With Lime Sugar</h3>
-                                <div class="d-none d-lg-flex flex-wrap align-items-center justify-content-between flex-wrap">
-                                    <p class="  orange-box rounded px-3 py-2 lh-1">Gluten free</p>
-                                    <p class="orange-box rounded px-3 py-2 lh-1">Dairy free</p>
-                                    <p class="orange-box rounded px-3 py-2 lh-1">Lacto ovo vegetarian</p>
-                                    <p class="mb-sm-0 orange-box rounded px-3 py-2 lh-1">Vegan</p>
+        <!-- Snack-Modal -->
+        <section class="modal fade text-white" id="snack-recipe" tabindex="-1" aria-labelledby="instructionsLabel" aria-hidden="true" data-bs-theme="dark">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title h2" id="instructionsLabel">
+                            Snack <span class="sec-font-color">Recipe</span>
+                        </p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-5 p-sm-0">
+                                    <img alt="" class="img-fluid rounded h-100 object-fit-cover" id="snack-modal-image">
+                                </div>
+                                <div class="col-sm-8 col-md-7">
+                                    <p class="mb-0 fs-5"><i>Sip and Savour</i></p>
+                                    <h3 class="h2" id="snack-modal-title"></h3>
+                                    <div class="d-none d-lg-flex flex-wrap align-items-center justify-content-between justify-content-sm-start flex-wrap" id="dish-types-snack"></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="bg-black py-2 px-3 rounded shadow-lg">
-                                <h3 class="h4">Ingredients</h3>
-                                <ul class="d-flex flex-wrap">
-                                    <li class="ingredient fs-5">1/2 cup crushed ice</li>
-                                    <li class="ingredient fs-5">1 Juice of lime</li>
-                                    <li class="ingredient fs-5">Lime Sugar, optional</li>
-                                    <li class="ingredient fs-5">1 teaspoon of orange liquor, optional</li>
-                                    <li class="ingredient fs-5">1 medium size peach</li>
-                                    <li class="ingredient fs-5">2 ounces of Peach Schnapps</li>
-                                    <li class="ingredient fs-5">2 tablespoons of sugar</li>
-                                    <li class="ingredient fs-5">4 ounces silver tequila (I used Patron)</li>
-                                </ul>
+                            <div class="row mt-3">
+                                <div class="bg-black py-2 px-3 rounded">
+                                    <h3 class="h4">Ingredients</h3>
+                                    <ul class="d-flex flex-wrap" id="snack-ingredients"></ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="bg-black py-2 px-3 rounded shadow-lg">
-                                <h3 class="h4">Instructions</h3>
-                                <ol>
-                                    <li class="fs-5 lh-sm">If making lime sugar:  Add 1/2 teaspoon of finely minced lime zest to 1/4 cup granulated sugar and set aside for about 30 minutes, stirring occasionally.</li>
-                                    <li class="fs-5 lh-sm">For a pretty presentation, coat the rims of the glasses you are using with lime sugar (of course you can alternatively use plain white sugar).  Do this by rubbing the rim with a lime wedge and then placing the rim into a plate that has the sugar in it until the rim is coated with sugar.</li>
-                                    <li class="fs-5 lh-sm">Place all ingredients into the blender and puree.  Add a little cold water if it is too thick.  Either chill all ingredients before making or add some ice cubes after you have made the margarita and stir it until it is as cold as you like and strain it into your glasses (or serve on the rocks).</li>
-                                </ol>
+                            <div class="row mt-3">
+                                <div class="bg-black py-2 px-3 rounded">
+                                    <h3 class="h4">Instructions</h3>
+                                    <ol id="snack-instructions"></ol>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </aside>
+        </section>
         
         <!-- Footer -->
         <footer class="py-2 bg-dark mt-3">
-            <p class="text-center text-secondary mb-0 fs-6">&copy; <span id-date>2023</span> FlavorFusion, Inc</p>
+            <p class="text-center text-secondary mb-0 fs-6">&copy; <span id="year"></span> FlavorFusion, Inc</p>
         </footer>
     </main>
-
+    <script src="../js/main.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

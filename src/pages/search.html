@@ -71,8 +71,8 @@
                 </div>
                 <div class="nav-item dropdown me-md-3">
                     <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img class="rounded-circle me-lg-2" src="https://themewagon.github.io/Breeze-Free-Bootstrap-Admin-Template/assets/images/faces/face1.jpg" alt="" style="width: 40px; height: 40px;">
-                        <span class="d-none d-lg-inline-flex text-white fs-5 fw-semibold">Ehlena George</span>
+                        <img class="rounded-circle me-sm-2" src="https://themewagon.github.io/Breeze-Free-Bootstrap-Admin-Template/assets/images/faces/face1.jpg" alt="" style="width: 40px; height: 40px;">
+                        <span class="d-none d-sm-inline-flex text-white fs-5 fw-semibold" id="username"></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end bg-dark  rounded-bottom m-0">
                         <a href="../../index.html" class="dropdown-item text-white">Log Out</a>
@@ -92,10 +92,10 @@
                     <p class="fs-5 lh-sm">Save time without sacrificing flavor, streamline your cooking experience, and spend less time planning and more time enjoying delicious meals.</p>
                     <form class="row" role="search">
                         <div class="col-sm-9">
-                            <input class="form-control form-control-lg" type="search" placeholder="Search recipes" aria-label="Search for delicious recipes">
+                            <input class="form-control form-control-lg" type="search" id="search" placeholder="Search recipes" aria-label="Search for delicious recipes">
                         </div>
                         <div class="col-sm-3 mt-3 mt-sm-0 px-sm-0">
-                            <button class="btn btn-lg w-100" type="submit">Search</button>
+                            <button class="btn btn-lg w-100" id="search-btn" type="submit">Search</button>
                         </div>
                     </form>
                 </div>
@@ -103,131 +103,14 @@
                     <img src="../../public/search.png" alt="" class="img-fluid">
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-sm-2 mt-3 g-4">
-                <div class="col">
-                    <div class="card wrapper text-white">
-                        <div class="row g-0">
-                            <div class="col-sm-4 col-lg-5">
-                                <img src="../../public/overview-placeholder.png" class="img-fluid rounded-start h-100 object-fit-cover" alt="...">
-                            </div>
-                            <div class="col-sm-8 col-lg-7">
-                                <div class="card-body pe-md-0 text-center text-sm-start">
-                                    <h5 class="card-title h4">Pasta With Tuna</h5>
-                                    <p class="card-text mb-0 fs-6">
-                                        <span class="fw-semibold">Healthy: </span>
-                                        <span>true</span>
-                                    </p>
-                                    <p class="card-text mb-0 fs-6">
-                                        <span class="fw-semibold">Nutrition Score: </span>
-                                        <span>9%</span>
-                                    </p>
-                                    <p class="card-text mb-0 fs-6">
-                                        <span class="fw-semibold">Calories: </span>
-                                        <span>422.67 kcal</span>
-                                    </p>
-                                    <div class="d-grid col-12 col-sm-8 mt-3">
-                                        <button class="btn btn fw-semibold">Recipe</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card wrapper text-white">
-                        <div class="row g-0">
-                            <div class="col-sm-4 col-lg-5">
-                                <img src="../../public/overview-placeholder.png" class="img-fluid rounded-start h-100 object-fit-cover" alt="...">
-                            </div>
-                            <div class="col-sm-8 col-lg-7">
-                                <div class="card-body pe-md-0 text-center text-sm-start">
-                                    <h5 class="card-title h4">Pasta With Tuna</h5>
-                                    <p class="card-text mb-0 fs-6">
-                                        <span class="fw-semibold">Healthy: </span>
-                                        <span>true</span>
-                                    </p>
-                                    <p class="card-text mb-0 fs-6">
-                                        <span class="fw-semibold">Nutrition Score: </span>
-                                        <span>9%</span>
-                                    </p>
-                                    <p class="card-text mb-0 fs-6">
-                                        <span class="fw-semibold">Calories: </span>
-                                        <span>422.67 kcal</span>
-                                    </p>
-                                    <div class="d-grid col-12 col-sm-8 mt-3">
-                                        <button class="btn btn fw-semibold">Recipe</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card wrapper text-white">
-                        <div class="row g-0">
-                            <div class="col-sm-4 col-lg-5">
-                                <img src="../../public/overview-placeholder.png" class="img-fluid rounded-start h-100 object-fit-cover" alt="...">
-                            </div>
-                            <div class="col-sm-8 col-lg-7">
-                                <div class="card-body pe-md-0 text-center text-sm-start">
-                                    <h5 class="card-title h4">Pasta With Tuna</h5>
-                                    <p class="card-text mb-0 fs-6">
-                                        <span class="fw-semibold">Healthy: </span>
-                                        <span>true</span>
-                                    </p>
-                                    <p class="card-text mb-0 fs-6">
-                                        <span class="fw-semibold">Nutrition Score: </span>
-                                        <span>9%</span>
-                                    </p>
-                                    <p class="card-text mb-0 fs-6">
-                                        <span class="fw-semibold">Calories: </span>
-                                        <span>422.67 kcal</span>
-                                    </p>
-                                    <div class="d-grid col-12 col-sm-8 mt-3">
-                                        <button class="btn btn fw-semibold">Recipe</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card wrapper text-white">
-                        <div class="row g-0">
-                            <div class="col-sm-4 col-lg-5">
-                                <img src="../../public/overview-placeholder.png" class="img-fluid rounded-start h-100 object-fit-cover" alt="...">
-                            </div>
-                            <div class="col-sm-8 col-lg-7">
-                                <div class="card-body pe-md-0 text-center text-sm-start">
-                                    <h5 class="card-title h4">Pasta With Tuna</h5>
-                                    <p class="card-text mb-0 fs-6">
-                                        <span class="fw-semibold">Healthy: </span>
-                                        <span>true</span>
-                                    </p>
-                                    <p class="card-text mb-0 fs-6">
-                                        <span class="fw-semibold">Nutrition Score: </span>
-                                        <span>9%</span>
-                                    </p>
-                                    <p class="card-text mb-0 fs-6">
-                                        <span class="fw-semibold">Calories: </span>
-                                        <span>422.67 kcal</span>
-                                    </p>
-                                    <div class="d-grid col-12 col-sm-8 mt-3">
-                                        <button class="btn btn fw-semibold">Recipe</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <ul class="row row-cols-1 row-cols-sm-2 mt-3 g-4 ps-0" id="search-wrapper"></ul>
 
-            <footer class="py-2 wrapper mt-3">
-                <p class="text-center text-secondary mb-0 fs-6">&copy; <span id-date>2023</span> FlavorFusion, Inc</p>
+            <footer class="py-2 wrapper row mt-3">
+                <p class="text-center text-secondary mb-0 fs-6">&copy; <span id="year"></span> FlavorFusion, Inc</p>
             </footer>
         </section>
     </main>
-
+    <script src="../js/search.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
