@@ -7,9 +7,6 @@
 .nav-link.active, .nav-link:hover {
     color: #f96d00 !important;
 }
-.nav-fill .nav-item .btn {
-    width: 90%;
-}
 .btn, .btn.active {
     background-color: #f96d00;
     color: #f1f8ff;

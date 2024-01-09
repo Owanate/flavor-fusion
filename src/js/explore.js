@@ -1,7 +1,8 @@
 import * as $ from "jquery";
-import { ApiKey, getDescription, date } from "./main";
+import { ApiKey, getDescription, date, getUsername } from "./main";
 
 $("#year").text(date.getFullYear());
+$("#username").text(getUsername());
 
 let getMealPlan = (response) => {
   if (date.getHours() < 12) {

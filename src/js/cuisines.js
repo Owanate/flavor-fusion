@@ -1,7 +1,8 @@
 import * as $ from "jquery";
-import { ApiKey, date } from "./main";
+import { ApiKey, date, getUsername } from "./main";
 
 $("#year").text(date.getFullYear());
+$("#username").text(getUsername());
 
 function getCuisine(cuisine, wrapper) {
     $.get(

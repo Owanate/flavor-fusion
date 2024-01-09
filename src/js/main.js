@@ -2,6 +2,13 @@ import * as $ from "jquery";
 let date = new Date();
 $("#year").text(date.getFullYear());
 
+let getUsername = () => {
+  let user = JSON.parse(localStorage.getItem("user"));
+  let username = user[0].name;
+  return username
+}
+$("#username").text(getUsername())
+
 const ApiKey = "ca4b74b8ded24092909fd3d74317be29";
 let getData = (food, callback) => {
   $.get(
@@ -74,9 +81,11 @@ function fetchContent() {
 }
 
 $("document").ready(
+  getUsername(),
   getRandomMeal(),
   getRandomDrink(),
   getRandomSnack(),
   fetchContent()
 );
-export {ApiKey, getDescription, date}
+
+export {ApiKey, getDescription, date, getUsername}
