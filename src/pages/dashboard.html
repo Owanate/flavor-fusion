@@ -21,75 +21,76 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body class="bg-black d-flex">
-    <!-- Sidebar -->
-    <nav class="offcanvas-lg offcanvas-start text-bg-dark mt-5 pt-3 vh-100 position-fixed top-0 start-0 overflow-y-auto" tabindex="-1" id="sidebar" data-bs-backdrop="false" aria-labelledby="sideNavigationLabel">
-        <div class="offcanvas-body navbar navbar-dark flex-column align-items-start mt-3 px-md-4 ms-lg-3">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active d-flex align-items-center mb-3 mb-md-4" aria-current="page" href="./dashboard.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#f1f8ff" class="me-2"><path d="M19 21.0001H5C4.44772 21.0001 4 20.5524 4 20.0001V11.0001L1 11.0001L11.3273 1.61162C11.7087 1.26488 12.2913 1.26488 12.6727 1.61162L23 11.0001L20 11.0001V20.0001C20 20.5524 19.5523 21.0001 19 21.0001ZM13 19.0001H18V9.15757L12 3.70302L6 9.15757V19.0001H11V13.0001H13V19.0001Z"></path></svg>
-                        <span class="text-white fw-semibold fs-4">Home</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center mb-3 mb-md-4" href="./explore.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#f1f8ff" class="bi bi-file-text me-2" viewBox="0 0 16 16">
-                            <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z"/>
-                            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1"/>
-                        </svg>
-                        <span class="text-white fw-semibold fs-4">Explore</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="./cuisines.html" class="nav-link d-flex align-items-center mb-3 mb-md-4">
-                        <span class="material-symbols-outlined text-white me-2">restaurant_menu</span>
-                        <span class="text-white fw-semibold fs-4">Cuisines</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center mb-3 mb-md-4" href="./search.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#f1f8ff" class="bi bi-search me-2" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                        </svg>
-                        <span class="text-white fw-semibold fs-4">Search</span>
-                    </a>
-                </li>
-            </ul>
+    <!-- Header -->
+    <header class="navbar navbar-dark navbar-expand-lg py-3 px-4 fixed-top bg-dark">
+        <p class="text-white h2">Flavor<span class="sec-font-color">Fusion</span></p>
+        <a class="skip-link" href='#main'>Skip to content</a>
+        <div class="d-flex align-items-center ms-auto">
+            <div class="d-none d-lg-flex text-white" aria-hidden="true">
+                <p class="orange-box lh-1 me-3 px-3 py-2 rounded-pill mb-0 fw-semibold">Menu</p>
+                <p class="orange-box lh-1 me-3 px-3 py-2 rounded-pill mb-0 fw-semibold">Recipe</p>
+                <p class="orange-box lh-1 me-3 px-3 py-2 rounded-pill mb-0 fw-semibold">Meal Plans</p>
+            </div>
+            <div class="nav-item dropdown me-md-3">
+                <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="rounded-circle me-sm-2" src="https://themewagon.github.io/Breeze-Free-Bootstrap-Admin-Template/assets/images/faces/face1.jpg" alt="" style="width: 40px; height: 40px;">
+                    <span class="d-none d-sm-inline-flex text-white fs-5 fw-semibold" id="username"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end bg-dark  rounded-bottom m-0">
+                    <a href="../../index.html" class="dropdown-item text-white">Log Out</a>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-label="Navigation menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
-    </nav>
+    </header>
 
     <!-- Content -->
-    <main class="container-fluid main-content px-4">
+    <main class="container-fluid main-content px-4 px-sm-3">
         <!-- Navbar -->
-        <header class="navbar navbar-dark navbar-expand-lg py-3 px-4 fixed-top bg-dark">
-            <p class="text-white h2">Flavor<span class="sec-font-color">Fusion</span></p>
-            <div class="d-flex align-items-center ms-auto">
-                <div class="d-none d-lg-flex text-white">
-                    <p class="orange-box lh-1 me-3 px-3 py-2 rounded-pill mb-0 fw-semibold">Menu</p>
-                    <p class="orange-box lh-1 me-3 px-3 py-2 rounded-pill mb-0 fw-semibold">Recipe</p>
-                    <p class="orange-box lh-1 me-3 px-3 py-2 rounded-pill mb-0 fw-semibold">Meal Plans</p>
-                </div>
-                <div class="nav-item dropdown me-md-3">
-                    <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img class="rounded-circle me-sm-2" src="https://themewagon.github.io/Breeze-Free-Bootstrap-Admin-Template/assets/images/faces/face1.jpg" alt="" style="width: 40px; height: 40px;">
-                        <span class="d-none d-sm-inline-flex text-white fs-5 fw-semibold" id="username"></span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end bg-dark  rounded-bottom m-0">
-                        <a href="../../index.html" class="dropdown-item text-white">Log Out</a>
-                    </div>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-label="Sidebar navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <nav class="offcanvas-lg offcanvas-start text-bg-dark mt-5 pt-3 vh-100 position-fixed top-0 start-0 overflow-y-auto" tabindex="-1" id="sidebar" data-bs-backdrop="false" aria-label="Main Navigation">
+            <div class="offcanvas-body navbar navbar-dark flex-column align-items-start mt-3 px-md-4 ms-lg-3">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="text-decoration-none d-flex align-items-center mb-3 mb-md-4" href="./dashboard.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#f1f8ff" class="me-2" aria-hidden="true"><path d="M19 21.0001H5C4.44772 21.0001 4 20.5524 4 20.0001V11.0001L1 11.0001L11.3273 1.61162C11.7087 1.26488 12.2913 1.26488 12.6727 1.61162L23 11.0001L20 11.0001V20.0001C20 20.5524 19.5523 21.0001 19 21.0001ZM13 19.0001H18V9.15757L12 3.70302L6 9.15757V19.0001H11V13.0001H13V19.0001Z"></path></svg>
+                            <span class="nav-link text-white fw-semibold fs-4">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-decoration-none d-flex align-items-center mb-3 mb-md-4" href="./explore.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#f1f8ff" class="bi bi-file-text me-2" viewBox="0 0 16 16" aria-hidden="true">
+                                <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z"/>
+                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1"/>
+                            </svg>
+                            <span class="nav-link text-white fw-semibold fs-4">Explore</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./cuisines.html" class="text-decoration-none d-flex align-items-center mb-3 mb-md-4">
+                            <span class="material-symbols-outlined text-white me-2" aria-hidden="true">restaurant_menu</span>
+                            <span class="nav-link text-white fw-semibold fs-4">Cuisines</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-decoration-none d-flex align-items-center mb-3 mb-md-4" href="./search.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#f1f8ff" class="bi bi-search me-2" viewBox="0 0 16 16" aria-hidden="true">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                            <span class="nav-link text-white fw-semibold fs-4">Search</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </header>
+        </nav>
         
         <!-- Main content -->
-        <section class="pt-5 mt-5 text-white">
+        <section class="pt-5 mt-5 text-white" id="main">
             <div class="banner p-3 rounded">
                 <div class="col-sm-6 col-lg-5 text-center text-sm-start">
-                    <h1 class="display-5 lh-1 fw-semibold mb-3 ms-sm-4 ms-lg-3">It's not just the food but <span class="sec-font-color">the experience</span></h1>
-                    <p class="fs-5 ms-sm-4 ms-lg-3 lh-1">Good food makes you happy. Let's take your happiness to the next level with a great tasty meal and dishes tailored to your taste buds and dietary preferences.</p>
+                    <h1 class="display-5 lh-1 fw-semibold mb-3 ms-sm-3">It's not just the food but <span class="sec-font-color">the experience</span></h1>
+                    <p class="fs-5 ms-sm-3 lh-1">Good food makes you happy. Let's take your happiness to the next level with a great tasty meal and dishes tailored to your taste buds and dietary preferences.</p>
                 </div>
             </div>
             <div class="orange-box rounded p-3 mt-3">
@@ -97,13 +98,13 @@
                     <div class="col-sm-3 dashboard-image">
                         <img src="../../public/explore.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-sm-8 row align-items-center ms-sm-3 wrapper rounded p-3">
-                        <div class="col-sm-4 text-center border-end">
+                    <div class="col-sm-8 row align-items-sm-center mt-3 mt-sm-0 ms-sm-3 wrapper rounded p-3">
+                        <div class="col-sm-4 text-center">
                             <h5 class="h4">Effortless Nutrition</h5>
                             <p class="lh-1">Simplify your day with well-balanced, nutritious meals.</p>
                         </div>
-                        <div class="col-sm-4 text-center border-end">
-                            <h5 class="h4">Time-Saving Convenience</h5>
+                        <div class="col-sm-4 text-center">
+                            <h5 class="h4">Time-Efficient Ease</h5>
                             <p class="lh-1">Maximize efficiency, enjoy delicious meals without hassle.</p>
                         </div>
                         <div class="col-sm-4 text-center">
@@ -120,13 +121,13 @@
                         <h3 class="h3" id="title"></h3>
                         <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center">
                             <p class="mb-0 d-flex align-items-center me-sm-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill me-2" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill me-2" viewBox="0 0 16 16" aria-hidden="true">
                                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
                                 </svg>
                                 <span id="serve-time"></span>
                             </p>
                             <p class="mb-0 d-flex align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill me-2" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill me-2" viewBox="0 0 16 16" aria-hidden="true">
                                     <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
                                 </svg>
                                 <span id="serve-people"></span>
@@ -135,10 +136,10 @@
                         <div class="row mt-3">
                             <div class="col-sm-7">
                                 <p class="mb-0 lh-sm text-sm-start" id="description"></p>
-                                <div class="d-grid col-12 col-sm-6 mt-3">
-                                    <a target="_blank" class="btn fw-semibold  d-flex align-items-center justify-content-center" id="recipe-link">
-                                        Recipe
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                <div class="d-grid col-12 col-sm-8 mt-3">
+                                    <a class="btn fw-semibold d-flex align-items-center justify-content-center" id="recipe-link" target="_blank">
+                                        Get Recipe
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16" aria-hidden="true">
                                             <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
                                             <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
                                         </svg>
@@ -151,9 +152,9 @@
                         </div>
                     </div>
                     <div class="col-lg-5 mt-3 mt-lg-0 p-0 ps-lg-3">
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-1 g-4" id="modal-wrapper">
-                            <div class="col">
-                                <div class="card bg-black text-white" style="max-width: 540px;">
+                        <ul class="row row-cols-1 row-cols-sm-2 row-cols-lg-1 g-4 ps-0" id="modal-wrapper">
+                            <li class="col" style="max-height: 400px;">
+                                <div class="card bg-black text-white">
                                     <div class="row g-0 align-items-center">
                                         <div class="col-md-4 ps-md-3">
                                             <img id="drink-image" class="img-fluid rounded" alt="">
@@ -167,9 +168,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col">
-                                <div class="card bg-black text-white" style="max-width: 540px;">
+                            </li>
+                            <li class="col" style="max-height: 400px;">
+                                <div class="card bg-black text-white">
                                     <div class="row g-0 align-items-center">
                                         <div class="col-md-4 ps-md-3">
                                             <img id="snack-image" class="img-fluid rounded" alt="">
@@ -183,8 +184,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -200,7 +201,7 @@
         <!-- Modal -->
         <!-- Drink Modal -->
         <section class="modal fade text-white" id="drink-recipe" tabindex="-1" aria-labelledby="instructionsLabel" aria-hidden="true" data-bs-theme="dark">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document" aria-modal="true">
                 <div class="modal-content">
                     <div class="modal-header">
                         <p class="modal-title h2" id="instructionsLabel">
@@ -239,7 +240,7 @@
         </section>
         <!-- Snack-Modal -->
         <section class="modal fade text-white" id="snack-recipe" tabindex="-1" aria-labelledby="instructionsLabel" aria-hidden="true" data-bs-theme="dark">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document" aria-modal="true">
                 <div class="modal-content">
                     <div class="modal-header">
                         <p class="modal-title h2" id="instructionsLabel">

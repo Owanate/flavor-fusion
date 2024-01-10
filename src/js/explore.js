@@ -8,12 +8,15 @@ let getMealPlan = (response) => {
   if (date.getHours() < 12) {
     getMeal(response.meals[0].id);
     $("#tag").text("Breakfast");
+    getVideo("breakfast");
   }else if (date.getHours() < 17) {
     getMeal(response.meals[1].id);
     $("#tag").text("Lunch");
+    getVideo("lunch");
   }else {
     getMeal(response.meals[2].id);
     $("#tag").text("Dinner");
+    getVideo("dinner");
   }
   $("#calories").text(`${response.nutrients.calories}kcal`);
   $("#protein").text(`${response.nutrients.protein}g`);
@@ -30,7 +33,6 @@ let getMeal = (recipeId) => {
       $('#likes').text(`${data.aggregateLikes} likes`);
       getDescription(data.summary, "#description", 3);
       $("#recipe-link").attr("href", `../pages/instructions.html?id=${data.id}`);
-      getVideo(data.title);
     }
   );
 }

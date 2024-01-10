@@ -4,10 +4,14 @@
 .nav-link {
     font-size: 20px;
 }
-.nav-link.active, .nav-link:hover {
+.nav-link:where(:hover, :active){
     color: #f96d00 !important;
+    text-decoration: underline;
 }
-.btn, .btn.active {
+.nav-link:focus-visible, .btn:focus-visible{
+    outline: 3px solid #f96d00 !important;
+}
+.btn{
     background-color: #f96d00;
     color: #f1f8ff;
     border: 0;
@@ -60,6 +64,18 @@
     width: 230px !important;
     z-index: 999 !important;
 }
+.skip-link {
+  color: #fff;
+  font-weight: 700;
+  left: 50%;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-200%);
+  transition: transform 0.3s;
+}
+.skip-link:focus {
+  transform: translateY(0%);
+}
 .search-image img {
     animation: imageRotate 50s linear infinite;
 }
@@ -72,6 +88,18 @@
 .card-img-overlay {
     background-color: rgba(0, 0, 0, 0.5);
     height: 15em;
+}
+.explore-overlay {
+    height: 18em;
+}
+.card .card-body > * + * {
+  margin-top: 0.75rem !important;
+}
+.card .card-body :last-child {
+  margin-top: auto !important;
+}
+.card .card-body :nth-last-child(2) {
+  margin-bottom: 0.75rem !important;
 }
 .banner {
     background: url('../../public/main-bg.jpg') center center/cover no-repeat;
@@ -96,6 +124,7 @@
     top: 0;
     right: 0;
     bottom: 0;
+    cursor: pointer;
 }
 .cuisine-card:hover {
     border: 2px solid #f96d00;
