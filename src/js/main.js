@@ -9,7 +9,7 @@ let getUsername = () => {
 }
 $("#username").text(getUsername())
 
-const ApiKey = "ca4b74b8ded24092909fd3d74317be29";
+const ApiKey = "26a6bc5963794cdc91fc3144c322c7a7";
 let getData = (food, callback) => {
   $.get(
     `https://api.spoonacular.com/recipes/random?number=1&tags=vegetarian,${food}&apiKey=${ApiKey}`,
