@@ -10,8 +10,8 @@ FlavorFusion brings you a delightful culinary experience by providing a wide ran
 - Diverse selection of over 27 cuisines, including Italian and Indian cuisines with wine pairings for each recipe.
 
 ### Screenshot
-![](./public/screenshot.PNG)
-![](./public/screenshot-1.PNG)
+![](./public/screenshot.png)
+![](./public/screenshot-1.png)
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Owanate/flavor-fusion)
