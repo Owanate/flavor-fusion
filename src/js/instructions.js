@@ -1,5 +1,5 @@
-import * as $ from "jquery";
-import { getDescription} from "./main";
+import $ from "jquery";
+import { getDescription } from "./main";
 
 const ApiKey = "8dd45855b060473c83dc54dc67fb2869";
 function getUrlParameter(name) {

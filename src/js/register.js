@@ -1,29 +1,31 @@
-import * as $ from "jquery";
+import $ from "jquery";
 import jqueryValidate from "jquery-validation";
 import Swal from "sweetalert2";
 
 let showSignInForm = () => {
-    if ($("#signin").hasClass("d-none")) {
-      $("#signin").removeClass("d-none");
-      $("#signup").addClass("d-none");
-      window.location.href = "../pages/register.html#signup";
-    } else {
-      $("#signin").addClass("d-none");
-    } 
-}
+  if ($("#signin").hasClass("d-none")) {
+    $("#signin").removeClass("d-none");
+    $("#signup").addClass("d-none");
+    window.location.href = "../pages/register.html#signup";
+  } else {
+    $("#signin").addClass("d-none");
+  }
+};
 
 $("#showSignUpForm").click(() => {
-    if ($("#signup").hasClass("d-none")) {
-      $("#signup").removeClass("d-none");
-      $("#signin").addClass("d-none");
-      window.location.href = "../pages/register.html#signup";
-    } else {
-      $("#signup").addClass("d-none");
-    }
+  if ($("#signup").hasClass("d-none")) {
+    $("#signup").removeClass("d-none");
+    $("#signin").addClass("d-none");
+    window.location.href = "../pages/register.html#signup";
+  } else {
+    $("#signup").addClass("d-none");
+  }
 });
 
 function navigateTo(formId) {
-  if ($(formId)) {$(formId).removeClass("d-none");}
+  if ($(formId)) {
+    $(formId).removeClass("d-none");
+  }
 }
 
 $.validator.addMethod(
@@ -121,7 +123,11 @@ function login(event) {
   const pwd = $("#signin-password").val();
   // Check if the user exists
   let user = JSON.parse(localStorage.getItem("user")) || [];
-  let exist = user.some((data) =>data.email.toLowerCase() === email.toLowerCase() && data.password.toLowerCase() === pwd.toLowerCase());
+  let exist = user.some(
+    (data) =>
+      data.email.toLowerCase() === email.toLowerCase() &&
+      data.password.toLowerCase() === pwd.toLowerCase()
+  );
   if (!exist) {
     // If the user doesn't exist, show error message
     Swal.fire({
