@@ -52,13 +52,13 @@ function searchResult(e) {
     $("#search-wrapper").empty();
 
     $.get(
-      `https://api.spoonacular.com/recipes/complexSearch?number=4&query=${value}&diet=vegtarian&apiKey=${ApiKey}&addRecipeNutrition=true`, 
+      `https://api.spoonacular.com/recipes/complexSearch?number=4&query=${value}&diet=vegtarian&apiKey=${ApiKey}&addRecipeNutrition=true`,
       (response) => {
         $.each(response.results, (index, data) => {
-           $("#search-wrapper").append(searchCard(data)); 
-        })
+          $("#search-wrapper").append(searchCard(data));
+        });
       }
-    );
+    ).fail((error) => console.error("Fetch", error));
 }
 
 $("#search-btn").click((e) => {

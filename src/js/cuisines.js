@@ -6,9 +6,10 @@ $("#username").text(getUsername());
 
 function getCuisine(cuisine, wrapper) {
     $.get(
-      `https://api.spoonacular.com/recipes/random?number=4&tags=vegetarian,${cuisine}&apiKey=${ApiKey}`,(data) => {
+      `https://api.spoonacular.com/recipes/random?number=4&tags=vegetarian,${cuisine}&apiKey=${ApiKey}`,
+      (data) => {
         $.each(data.recipes, (index, result) => {
-            let card = `
+          let card = `
                 <li class="col">
                     <div class="card cuisine-card text-bg-dark position-relative">
                         <img src="${result.image}" class="card-img object-fit-cover" alt="" style="height: 15em;">
@@ -27,9 +28,10 @@ function getCuisine(cuisine, wrapper) {
                     </div>
                 </li>
             `;
-            $(wrapper).append(card);
-        }) 
-    });
+          $(wrapper).append(card);
+        });
+      }
+    ).fail((error) => console.error("Fetch", error));
 }
 
 $("document").ready(
