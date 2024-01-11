@@ -11,10 +11,14 @@ $("#username").text(getUsername())
 
 const ApiKey = "ca4b74b8ded24092909fd3d74317be29";
 let getData = (food, callback) => {
-  $.get(
-    `https://api.spoonacular.com/recipes/random?number=1&tags=vegetarian,${food}&apiKey=${ApiKey}`,
-    callback
-  );
+  try {
+    $.get(
+      `https://api.spoonacular.com/recipes/random?number=1&tags=vegetarian,${food}&apiKey=${ApiKey}`,
+      callback
+    );
+  } catch (error) {
+    console.error("Fetch", error);
+  }
 }
 
 function getDescription(apiString, targetElement, end) {
@@ -77,7 +81,7 @@ function fetchContent() {
   $.get(
     `https://api.spoonacular.com/food/jokes/random?apiKey=${ApiKey}`,
     function (data) {$("#joke").text(data.text);}
-  );
+  ).fail((error) => console.error("Fetch", error));
 }
 
 $("document").ready(
