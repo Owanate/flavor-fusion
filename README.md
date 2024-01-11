@@ -10,11 +10,12 @@ FlavorFusion brings you a delightful culinary experience by providing a wide ran
 - Diverse selection of over 27 cuisines, including Italian and Indian cuisines with wine pairings for each recipe.
 
 ### Screenshot
-
+![](./public/screenshot.PNG)
+![](./public/screenshot-1.PNG)
 ### Links
 
-- Solution URL: [GitHub]()
-- Live Site URL: [Netlify]()
+- Solution URL: [GitHub](https://github.com/Owanate/flavor-fusion)
+- Live Site URL: [Netlify](https://flavorfusion-app.netlify.app/)
 
 ## My Process
 FlavorFusion is built using HTML, CSS, and JavaScript. It is a fully responsive web application that works on desktop and mobile devices.
@@ -24,17 +25,29 @@ FlavorFusion is built using HTML, CSS, and JavaScript. It is a fully responsive 
 - Semantic HTML5 markup
 - Bootstrap 
 - Mobile-first workflow
-- [jQuery]()
+- [jQuery](https://www.w3schools.com/jquery/jquery_syntax.asp)
+- Vite
 
 ### What I learned
+- String manipulation using regex and JavaScript string methods.
+- Effective debugging using the Console in Chrome Dev Tools.
+- How to use Bootstrap. breakpoints and components like modals and Offcanvas.
+- Using the jQuery validation plugin to validate a form.
+- Using Web APIs like Web Storage API and FormData API for user authentication.
 
 ### Useful Resources
+- SweetAlert: [Official Docs](https://sweetalert2.github.io/)
+- jQuery Validation: [Official Documentation](https://jqueryvalidation.org/)
+- FormData API: [JavaScript Info](https://javascript.info/formdata)
 
-### Setup
+## Setup
+### Prerequisites
 Before you begin, make sure you have the following installed on your machine:
 
 - Node.js and npm
 - Git
+
+### Installation
 1. Clone the repository
 ```bash
 git clone https://github.com/Owanate/flavorfusion.git
@@ -42,12 +55,24 @@ git clone https://github.com/Owanate/flavorfusion.git
 2. Navigate to the project repository
 ```bash
 cd flavorfusion
+```
+3. Install dependencies
+```
 npm install 
-npm run dev
 ```
 
-## Disclaimer
-The designs used in this app are not my own and belong to the following designers:
+### Usage
+#### Development Server
+To run the development server, use the following command:
+```
+npm run dev
+```
+#### Build for Production
+To build the project for production, use the following command:
+```
+npm run build
+```
+This will generate a dist folder containing the optimized and minified production-ready files.
 
-
-I want to give credit and recognition to the designer for their amazing work and effort in creating the designs used in this app. I have used their designs with permission and in compliance with their licensing terms. Please visit their websites to view their portfolios and to learn more about their work.
+## License
+This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license.
