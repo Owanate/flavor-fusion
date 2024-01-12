@@ -23,7 +23,7 @@
 <body class="bg-black d-flex">
     <!-- Sidebar -->
     <header class="navbar navbar-dark navbar-expand-lg py-3 px-4 fixed-top bg-dark">
-        <p class="text-white h2">Flavor<span class="sec-font-color">Fusion</span></p>
+        <p class="text-white h2" aria-label="logo">Flavor<span class="sec-font-color">Fusion</span></p>
         <a class="skip-link" href='#main'>Skip to content</a>
         <div class="d-flex align-items-center ms-auto">
             <div class="d-none d-lg-flex text-white" aria-hidden="true">
@@ -32,13 +32,13 @@
                 <p class="orange-box lh-1 me-3 px-3 py-2 rounded-pill mb-0 fw-semibold">Meal Plans</p>
             </div>
             <div class="nav-item dropdown me-md-3">
-                <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
                     <img class="rounded-circle me-sm-2" src="https://themewagon.github.io/Breeze-Free-Bootstrap-Admin-Template/assets/images/faces/face1.jpg" alt="" style="width: 40px; height: 40px;">
                     <span class="d-none d-sm-inline-flex text-white fs-5 fw-semibold" id="username"></span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-end bg-dark  rounded-bottom m-0">
-                    <a href="../../index.html" class="dropdown-item text-white">Log Out</a>
-                </div>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end bg-dark  rounded-bottom m-0">
+                    <li><a href="../../index.html" class="dropdown-item text-white">Log Out</a></li>
+                </ul>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-label="Toggle Navigation menu">
                 <span class="navbar-toggler-icon"></span>

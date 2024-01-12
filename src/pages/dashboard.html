@@ -23,7 +23,7 @@
 <body class="bg-black d-flex">
     <!-- Header -->
     <header class="navbar navbar-dark navbar-expand-lg py-3 px-4 fixed-top bg-dark">
-        <p class="text-white h2">Flavor<span class="sec-font-color">Fusion</span></p>
+        <p class="text-white h2" aria-label="logo">Flavor<span class="sec-font-color">Fusion</span></p>
         <a class="skip-link" href='#main'>Skip to content</a>
         <div class="d-flex align-items-center ms-auto">
             <div class="d-none d-lg-flex text-white" aria-hidden="true">
@@ -32,13 +32,13 @@
                 <p class="orange-box lh-1 me-3 px-3 py-2 rounded-pill mb-0 fw-semibold">Meal Plans</p>
             </div>
             <div class="nav-item dropdown me-md-3">
-                <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
                     <img class="rounded-circle me-sm-2" src="https://themewagon.github.io/Breeze-Free-Bootstrap-Admin-Template/assets/images/faces/face1.jpg" alt="" style="width: 40px; height: 40px;">
                     <span class="d-none d-sm-inline-flex text-white fs-5 fw-semibold" id="username"></span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-end bg-dark  rounded-bottom m-0">
-                    <a href="../../index.html" class="dropdown-item text-white">Log Out</a>
-                </div>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end bg-dark  rounded-bottom m-0">
+                    <li><a href="../../index.html" class="dropdown-item text-white">Log Out</a></li>
+                </ul>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-label="Toggle Navigation menu">
                 <span class="navbar-toggler-icon"></span>
@@ -100,15 +100,15 @@
                     </div>
                     <div class="col-sm-8 row align-items-sm-center mt-3 mt-sm-0 ms-sm-3 wrapper rounded p-3">
                         <div class="col-sm-4 text-center">
-                            <h5 class="h4">Effortless Nutrition</h5>
+                            <p class="h4">Effortless Nutrition</p>
                             <p class="lh-1">Simplify your day with well-balanced, nutritious meals.</p>
                         </div>
                         <div class="col-sm-4 text-center">
-                            <h5 class="h4">Time-Efficient Ease</h5>
+                            <p class="h4">Time-Efficient Ease</p>
                             <p class="lh-1">Maximize efficiency, enjoy delicious meals without hassle.</p>
                         </div>
                         <div class="col-sm-4 text-center">
-                            <h5 class="h4">Healthier Choices</h5>
+                            <p class="h4">Healthier Choices</p>
                             <p class="lh-1">Make better decisions effortlessly, promoting daily well-being.</p>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                                             <img id="drink-image" class="img-fluid rounded" alt="">
                                         </div>
                                         <div class="col-md-8 card-body">
-                                            <h5 class="card-title text-center mb-0" id="drink-title"></h5>
+                                            <p class="card-title text-center mb-0" id="drink-title"></h5>
                                             <p class="card-text text-secondary text-center mb-1" id="drink-serve"></p>
                                             <div class="d-grid">
                                                 <button type="button" id="modal-button" class="btn btn-sm fw-semibold" data-bs-toggle="modal" data-bs-target="#drink-recipe">Instructions</button>
@@ -192,7 +192,7 @@
             <div class="mt-4 speciality-banner rounded p-4">
                 <div class="col-sm-6 text-center text-sm-start">
                     <span class="sec-font-color fs-5 text-uppercase fw-semibold">Joke</span>
-                    <h5 class="h3 mb-1">A Side of Laughs</h5>
+                    <h2 class="h3 mb-1">A Side of Laughs</h2>
                     <p id="joke" class="lh-sm mb-0"></p>
                 </div>
             </div>
