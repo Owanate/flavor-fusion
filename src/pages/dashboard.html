@@ -155,10 +155,10 @@
                                             <img id="drink-image" class="img-fluid rounded" alt="">
                                         </div>
                                         <div class="col-md-8 card-body">
-                                            <p class="card-title text-center mb-0" id="drink-title"></h5>
+                                            <h5 class="card-title text-center mb-0" id="drink-title"></h5>
                                             <p class="card-text text-secondary text-center mb-1" id="drink-serve"></p>
                                             <div class="d-grid">
-                                                <button type="button" id="modal-button" class="btn btn-sm fw-semibold" data-bs-toggle="modal" data-bs-target="#drink-recipe">Instructions</button>
+                                                <button type="button" class="btn btn-sm fw-semibold" data-bs-toggle="modal" data-bs-target="#drink-recipe">Instructions</button>
                                             </div>
                                         </div>
                                     </div>
@@ -174,7 +174,7 @@
                                             <h5 class="card-title text-center mb-0" id="snack-title"></h5>
                                             <p class="card-text text-secondary text-center mb-1" id="snack-serve"></p>
                                             <div class="d-grid">
-                                                <button type="button" id="modal-button" class="btn btn-sm fw-semibold" data-bs-toggle="modal" data-bs-target="#snack-recipe">Instructions</button>
+                                                <button type="button" class="btn btn-sm fw-semibold" data-bs-toggle="modal" data-bs-target="#snack-recipe">Instructions</button>
                                             </div>
                                         </div>
                                     </div>
@@ -195,11 +195,11 @@
 
         <!-- Modal -->
         <!-- Drink Modal -->
-        <section class="modal fade text-white" id="drink-recipe" tabindex="-1" aria-labelledby="instructionsLabel" aria-hidden="true" data-bs-theme="dark">
+        <section class="modal fade text-white" id="drink-recipe" tabindex="-1" aria-labelledby="drinkLabel" aria-hidden="true" data-bs-theme="dark">
             <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document" aria-modal="true">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <p class="modal-title h2" id="instructionsLabel">
+                        <p class="modal-title h2" id="drinkLabel">
                             Drink <span class="sec-font-color">Recipe</span>
                         </p>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -234,11 +234,11 @@
             </div>
         </section>
         <!-- Snack-Modal -->
-        <section class="modal fade text-white" id="snack-recipe" tabindex="-1" aria-labelledby="instructionsLabel" aria-hidden="true" data-bs-theme="dark">
+        <section class="modal fade text-white" id="snack-recipe" tabindex="-1" aria-labelledby="snackLabel" aria-hidden="true" data-bs-theme="dark">
             <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document" aria-modal="true">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <p class="modal-title h2" id="instructionsLabel">
+                        <p class="modal-title h2" id="snackLabel">
                             Snack <span class="sec-font-color">Recipe</span>
                         </p>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

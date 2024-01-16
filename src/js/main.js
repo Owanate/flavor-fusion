@@ -9,7 +9,7 @@ let getUsername = () => {
 };
 $("#username").text(getUsername());
 
-const ApiKey = "9b70d83cccd246cf95b21a3a66f7539e";
+const ApiKey = "8dd45855b060473c83dc54dc67fb2869";
 let getData = (food, callback) => {
   try {
     $.get(
