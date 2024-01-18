@@ -1,24 +1,24 @@
 .sec-font-color {
-    color: #f96d00;
+    color: rgb(249, 109, 0);
 }
 .nav-link {
     font-size: 20px;
 }
 .nav-link:where(:hover, :active){
-    color: #f96d00 !important;
+    color: rgb(249, 109, 0) !important;
     text-decoration: underline;
 }
 .nav-link:focus-visible, .btn:focus-visible{
-    outline: 3px solid #f96d00 !important;
+    outline: 3px solid rgb(249, 109, 0) !important;
 }
 .btn{
-    background-color: #f96d00;
+    background-color: rgb(249, 109, 0);
     color: #f1f8ff;
     border: 0;
 }
 .btn:hover, .btn:focus{
     background-color: #fff;
-    color: #f96d00;
+    color: rgb(249, 109, 0);
 }
 .hero-parallax-img {
     top: 0%;
@@ -35,7 +35,7 @@
     background-blend-mode: darken;
 }
 .orange-box {
-    background-color: #f96d00;
+    background-color: rgb(249, 109, 0);
 }
 .register-body {
     background: url('../../public/register-bg.jpg');
@@ -127,13 +127,13 @@
     cursor: pointer;
 }
 .cuisine-card:hover {
-    border: 2px solid #f96d00;
+    border: 2px solid rgb(249, 109, 0);
 }
 .cuisine-card a:focus {
     text-decoration: underline;
 }
 .cuisine-card:focus-within {
-    border: 2px solid #f96d00;
+    border: 2px solid rgb(249, 109, 0);
 }
 .cuisine-card:focus-within a:focus {
     text-decoration: none;
