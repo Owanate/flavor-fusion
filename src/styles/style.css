@@ -45,16 +45,16 @@
     min-height: 100vh;
 }
 .wrapper{
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 9px );
-    -webkit-backdrop-filter: blur( 9px );
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
 }
 .form-control, .form-select {
-    background: rgba( 255, 255, 255, 0.5 );
+    background: rgba(255, 255, 255, 0.5);
 }
 .form-control:focus {
-    background: rgba( 255, 255, 255, 0.3 );
+    background: rgba(255, 255, 255, 0.3);
     color: #fff;
 }
 .form-select option {
