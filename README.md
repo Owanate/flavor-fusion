@@ -50,7 +50,7 @@ Before you begin, make sure you have the following installed on your machine:
 ### Installation
 1. Clone the repository
 ```bash
-git clone https://github.com/Owanate/flavorfusion.git
+git clone https://github.com/Owanate/flavor-fusion.git
 ```
 2. Navigate to the project repository
 ```bash
