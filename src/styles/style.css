@@ -1,68 +1,71 @@
 .sec-font-color {
-    color: rgb(249, 109, 0);
+  color: rgb(249, 109, 0);
 }
 .nav-link {
-    font-size: 20px;
+  font-size: 20px;
 }
-.nav-link:where(:hover, :active){
-    color: rgb(249, 109, 0) !important;
-    text-decoration: underline;
+.nav-link:where(:hover, :active) {
+  color: rgb(249, 109, 0) !important;
+  text-decoration: underline;
 }
-.nav-link:focus-visible, .btn:focus-visible{
-    outline: 3px solid rgb(249, 109, 0) !important;
+.nav-link:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid rgb(249, 109, 0) !important;
 }
-.btn{
-    background-color: rgb(249, 109, 0);
-    color: #f1f8ff;
-    border: 0;
+.btn {
+  background-color: rgb(249, 109, 0);
+  color: #f1f8ff;
+  border: 0;
 }
-.btn:hover, .btn:focus{
-    background-color: #fff;
-    color: rgb(249, 109, 0);
+.btn:hover,
+.btn:focus {
+  background-color: #fff;
+  color: rgb(249, 109, 0);
 }
 .hero-parallax-img {
-    top: 0%;
-    right: 0;
-    width: 130%;
+  top: 0%;
+  right: 0;
+  width: 130%;
 }
 .background {
-    background: url('../../public/background.jpg');
-    background-size: cover;
-    background-postion: center/center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken;
+  background: url("../../public/background.jpg");
+  background-size: cover;
+  background-postion: center/center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
 }
 .orange-box {
-    background-color: rgb(249, 109, 0);
+  background-color: rgb(249, 109, 0);
 }
 .register-body {
-    background: url('../../public/register-bg.jpg');
-    background-size: cover;
-    background-postion: center/center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+  background: url("../../public/register-bg.jpg");
+  background-size: cover;
+  background-postion: center/center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
-.wrapper{
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
+.wrapper {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
 }
-.form-control, .form-select {
-    background: rgba(255, 255, 255, 0.5);
+.form-control,
+.form-select {
+  background: rgba(255, 255, 255, 0.5);
 }
 .form-control:focus {
-    background: rgba(255, 255, 255, 0.3);
-    color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
 }
 .form-select option {
-    width: 50%;
+  width: 50%;
 }
 .offcanvas-lg {
-    width: 230px !important;
-    z-index: 999 !important;
+  width: 200px !important;
+  z-index: 999 !important;
 }
 .skip-link {
   color: #fff;
@@ -77,20 +80,20 @@
   transform: translateY(0%);
 }
 .search-image img {
-    animation: imageRotate 50s linear infinite;
+  animation: imageRotate 50s linear infinite;
 }
 .dashboard-image img {
-    width: 90%;
+  width: 90%;
 }
 .speciality-banner {
-    background: url('../../public/register-bg.jpg') center center/cover no-repeat;
+  background: url("../../public/register-bg.jpg") center center/cover no-repeat;
 }
 .card-img-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 15em;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 15em;
 }
 .explore-overlay {
-    height: 18em;
+  height: 18em;
 }
 .card .card-body > * + * {
   margin-top: 0.75rem !important;
@@ -102,62 +105,62 @@
   margin-bottom: 0.75rem !important;
 }
 .banner {
-    background: url('../../public/main-bg.jpg') center center/cover no-repeat;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken;
+  background: url("../../public/main-bg.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
 }
 .explore-banner {
-    background: url('../../public/explore-bg.jpg') center center/cover no-repeat;
-    background-color: rgba(0, 0, 0, 0.2);
-    background-blend-mode: darken;
+  background: url("../../public/explore-bg.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: darken;
 }
 .cuisine-banner {
-    min-height: 30vh;
+  min-height: 30vh;
 }
-.row>li {
-    list-style: none;
+.row > li {
+  list-style: none;
 }
 .cuisine-card a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    cursor: pointer;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
 }
 .cuisine-card:hover {
-    border: 2px solid rgb(249, 109, 0);
+  border: 2px solid rgb(249, 109, 0);
 }
 .cuisine-card a:focus {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .cuisine-card:focus-within {
-    border: 2px solid rgb(249, 109, 0);
+  border: 2px solid rgb(249, 109, 0);
 }
 .cuisine-card:focus-within a:focus {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @keyframes imageRotate {
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @media (min-width: 800px) {
-    .hero-parallax-img {
-        top: -10rem;
-        right: -10rem;
-        width: 80vw;
-    }
-    .offcanvas-lg {
-        margin-top: 4rem !important;
-    }
-    .main-content {
-        width: calc(100% - 230px);
-        margin-left: 230px;
-    }
-    .ingredient {
-        width: 50%;
-    }
+  .hero-parallax-img {
+    top: -10rem;
+    right: -10rem;
+    width: 80vw;
+  }
+  .offcanvas-lg {
+    margin-top: 4rem !important;
+  }
+  .main-content {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+  }
+  .ingredient {
+    width: 50%;
+  }
 }
